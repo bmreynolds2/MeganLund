@@ -1,0 +1,196 @@
+/******* Base Element Styles *******/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fdfffa;
+	color: #999;
+	font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	margin: 15px 0;
+	font-size: 3em;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	margin: 2px, 0 0;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+	font-family: 'Varela Round', sans-serif;
+}
+
+li {
+	list-style: none;
+	font-family: 'Cardo', serif;
+}
+
+
+a {
+	color: #EFCFA6;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+/*******  Base Layout Styles *******/
+
+
+/* ---- Navigation ---- */
+.name {
+	font-size: 1.25em;
+  	margin: 0;
+}
+
+.main-nav {
+  margin-top: 5px;
+ 
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+  	display: block;
+  	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  	padding: 3.2em 0;
+  	margin-bottom: 60px;
+  	text-align: center;
+}
+
+.col {
+ padding-right: 1em;
+ padding-left: 1em;
+}
+
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+ margin-bottom: 0;
+}
+
+/******* FOOTER *******/
+
+
+footer {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.social-icon {
+	width: 40px;
+	height: 40px;
+	margin: 0 5px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 769px) {
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.banner {
+	padding: 6em 0;
+}
+
+.name, 
+.col {
+	float: left;
+}
+
+.primary,
+.secondary {
+	float: left;
+}
+
+.main-nav {
+	float: right;
+	padding-right: 0;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.tagline {
+	font-size: 1.4em;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+}
+
+@media (min-width: 1025px) {
+
+.container {
+	width: 80%;
+	max-width: 1150px;
+	}
+
+.primary {
+	width: 40%;
+	}
+
+.secondary,
+.tertiary {
+	width: 30%;
+	}
+}
+
+
+
+
+
+
+
+
+
