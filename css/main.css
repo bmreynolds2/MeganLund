@@ -42,7 +42,22 @@ img {
 	max-width: 100%;
 }
 
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
 
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;
+	background: rgba(10,43,102, .50);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
 
 /*******  Base Layout Styles *******/
 
@@ -107,6 +122,12 @@ img {
  margin-bottom: 0;
 }
 
+.icon-location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
 /******* FOOTER *******/
 
 
@@ -125,6 +146,19 @@ footer {
   Media Queries
 ==================================== */
 @media (min-width: 769px) {
+
+body {
+	padding-top: 68px;
+}
+
+.main-header {
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 1px 4px rgba(0,0,0, .4);
+	width: 100%;
+	top: 0;
+	left: 0;
+}
 
 .container {
 	width: 90%;
